@@ -17,10 +17,11 @@ const Hero:React.FC = () => {
 export default Hero
 
 const Container = styled.div`
+  position: relative;
   padding: 20px 50px;
   height: 100vh;
-  /* background: linear-gradient(#4646AD, #FF0FCA, #0500E2, #3087C7); */
   background-color: black;
+  
 
   h1 {
     /* border: 1px solid red; */
@@ -32,10 +33,18 @@ const Container = styled.div`
 `
 const Wrapper = styled.div`
   display: flex;
-
+  flex-wrap: wrap;
   
   img {
     width: 766px;
     height: 766px;
+
+    @media (max-width: 450px) {
+    width: 160px;
+    height: 420px;
+    /* display: none; */
   }
+  }
+
+  
 `

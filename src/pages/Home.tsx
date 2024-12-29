@@ -1,4 +1,4 @@
-// import CountDown from "../components/Countd"
+import Collectibles from "../components/Collectibles"
 import CountDown from "../components/CountDown"
 import Hero from "../components/Hero"
 import Marquee from "../components/Marquee"
@@ -10,6 +10,7 @@ const Home = () => {
         <Hero/>
         <Marquee/>
         <CountDown/>
+        <Collectibles/>
     </>
   )
 }

@@ -96,6 +96,7 @@ const Marquee:React.FC =()=> {
 export default Marquee
 
 const MainContainer = styled.div`
+    position: relative;
     max-width: 100vw;
     overflow: hidden;
     flex-wrap: wrap;
