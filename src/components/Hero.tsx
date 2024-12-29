@@ -29,19 +29,31 @@ const Container = styled.div`
     font-size: 64px;
     max-width: 500px;
     margin-top: calc(100vh - 295px);
+
+    @media (max-width: 450px) {}
+    /* margin-top: 50px; */
+    font-size: 48px;
+    order: 2;
+
   }
 `
 const Wrapper = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  @media (max-width: 450px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+  }
   
   img {
     width: 766px;
     height: 766px;
 
     @media (max-width: 450px) {
-    width: 160px;
+    width: 300px;
     height: 420px;
+    order: 1;
     /* display: none; */
   }
   }
