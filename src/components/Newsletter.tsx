@@ -73,6 +73,7 @@ const Button = styled.button`
         align-items: center;
         justify-content: center;
         font-size: 12px;
+        color: black;
 
         :hover {
             width: 150px;
