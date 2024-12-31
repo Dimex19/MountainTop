@@ -1,6 +1,9 @@
 import styled from 'styled-components'
 import Logo from '../assets/images/logo.png'
 import { Link } from 'react-router-dom'
+import { GiHamburgerMenu } from "react-icons/gi";
+
+
 const Header:React.FC = ()=> {
     return (
         <Container>
@@ -10,19 +13,28 @@ const Header:React.FC = ()=> {
                 <Link to="/collections" id='link'>Collections</Link>
                 <Link to="/foundation" id='link'>Foundation</Link>
             </Links>
+            <HamContainer>
+                <GiHamburgerMenu/>
+            </HamContainer>
         </Container>
     )
 }
 export default Header
 
 const Container = styled.div`
-    /* background: linear-gradient(#4646AD, #FF0FCA, #0500E2); */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* border: 1px solid red; */
     img {
         width: 75px;
         height: 36px;
+
+        @media (max-width: 450px){
+            width: 63px;
+            height: 24px;
+        }
+
     }
 `
 const Links = styled.div`
@@ -34,5 +46,17 @@ const Links = styled.div`
     #link {
         text-decoration: none;
     color: white;
+    }
+    @media (max-width: 450px) {
+        display: none;
+    }
+`
+const HamContainer = styled.div`
+    display: none;
+
+    @media (max-width: 450px){
+        display: block;
+        color: white;
+        font-size: 24px;
     }
 `

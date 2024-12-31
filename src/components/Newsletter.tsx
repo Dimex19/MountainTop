@@ -7,10 +7,11 @@ const Newsletter:React.FC =()=> {
             <p id="para">Get notified to our public mint sale event, make sure you didn’t miss it.<br/>
             Enter your email below, so we can invite you to join the party.</p>
             <Wrapper>
-                <input type="email" name="email" id="email" placeholder="Enter email address" />
+                <input type="email" name="email" id="email" placeholder="Enter email address" required />
                 <Button>
-                    <button>SUBSCRIBE</button>
+                    {/* <button>SUBSCRIBE</button> */}
                     {/* <p id="btnPara">SUBSCRIBE</p> */}
+                    SUBSCRIBE
                 </Button>
             </Wrapper>
         </Container>
@@ -51,9 +52,7 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
 `
-const Button = styled.div`
-
-    button {
+const Button = styled.button`
         width: 140px;
         height: 50px;
         background-color: white;
@@ -68,7 +67,6 @@ const Button = styled.div`
             width: 150px;
             height: 55px;
         }
-    }
     #btnPara {
         color: black;
         text-align: center;

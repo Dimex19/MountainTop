@@ -13,8 +13,15 @@ const Collectibles = () => {
 export default Collectibles;
 const Container = styled.div `
     background-color: black;
-    display: flex;
-    justify-content: space-around;
+    /* display: flex;
+    justify-content: space-between; */
     flex-wrap: wrap;
+    display: grid;
+    grid: auto / auto auto auto;
     padding: 50px;
+
+    @media (max-width: 450px) {
+        display: flex;
+        flex-direction: column;
+    }
 `;

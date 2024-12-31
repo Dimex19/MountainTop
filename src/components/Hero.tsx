@@ -21,7 +21,11 @@ const Container = styled.div`
   padding: 20px 50px;
   height: 100vh;
   background-color: black;
-  
+  /* border: 1px solid red; */
+
+  @media (max-width: 450px){
+    padding: 10px;
+  }
 
   h1 {
     /* border: 1px solid red; */
@@ -33,6 +37,7 @@ const Container = styled.div`
     @media (max-width: 450px) {
       font-size: 48px;
       order: 2;
+      margin-top: 0px;
     }
     /* margin-top: 50px; */
     
@@ -57,6 +62,8 @@ const Wrapper = styled.div`
     width: 300px;
     height: 420px;
     order: 1;
+    /* border: 1px solid red; */
+    margin-right: 20px;
     /* display: none; */
     }
   }

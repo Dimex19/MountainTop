@@ -1,7 +1,7 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import styled from "styled-components";
 const Newsletter = () => {
-    return (_jsxs(Container, { children: [_jsx("h2", { children: "WE DON'T WANT TO LET YOU DOWN" }), _jsxs("p", { id: "para", children: ["Get notified to our public mint sale event, make sure you didn\u2019t miss it.", _jsx("br", {}), "Enter your email below, so we can invite you to join the party."] }), _jsxs(Wrapper, { children: [_jsx("input", { type: "email", name: "email", id: "email", placeholder: "Enter email address" }), _jsx(Button, { children: _jsx("button", { children: "SUBSCRIBE" }) })] })] }));
+    return (_jsxs(Container, { children: [_jsx("h2", { children: "WE DON'T WANT TO LET YOU DOWN" }), _jsxs("p", { id: "para", children: ["Get notified to our public mint sale event, make sure you didn\u2019t miss it.", _jsx("br", {}), "Enter your email below, so we can invite you to join the party."] }), _jsxs(Wrapper, { children: [_jsx("input", { type: "email", name: "email", id: "email", placeholder: "Enter email address", required: true }), _jsx(Button, { children: "SUBSCRIBE" })] })] }));
 };
 export default Newsletter;
 const Container = styled.div `
@@ -37,9 +37,7 @@ const Wrapper = styled.div `
     display: flex;
     justify-content: space-between;
 `;
-const Button = styled.div `
-
-    button {
+const Button = styled.button `
         width: 140px;
         height: 50px;
         background-color: white;
@@ -54,7 +52,6 @@ const Button = styled.div `
             width: 150px;
             height: 55px;
         }
-    }
     #btnPara {
         color: black;
         text-align: center;

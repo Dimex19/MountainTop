@@ -50,6 +50,10 @@ export default Footer
 const Container = styled.div`
     /* border: 1px solid red; */
     padding: 50px;
+
+    @media (max-width: 450px) {
+        padding: 10px;
+    }
 `
 const PushIt = styled.div`
     /* border: 1px solid blue; */
@@ -76,6 +80,11 @@ const LogosWrapper = styled.div`
         width: 106px;
         height: 51px;
         margin-right: 32px;
+
+        @media (max-width: 450px) {
+            width: 75px;
+            height: auto;
+        } 
     }
 `
 const PowerWrapper = styled.div`
