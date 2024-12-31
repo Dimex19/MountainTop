@@ -3,7 +3,7 @@ import CountDownClock from "./CountDownClock"
 
 const CountDown:React.FC = ()=> {
 
-    const targetDate = new Date("2025-3-31 23:59:59");
+    const targetDate = new Date("2025-03-31T23:59:59");
     return (
         <Container>
             <CountDownClock targetDate={targetDate}/>
