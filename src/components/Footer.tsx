@@ -76,6 +76,9 @@ const LogosWrapper = styled.div`
     display: flex;
     margin-bottom: 61px;
 
+    @media (max-width: 450px) {
+        margin-top: 20px;
+    } 
     #logo {
         width: 106px;
         height: 51px;
@@ -113,13 +116,18 @@ const TextNavWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     color: white;
+
+    @media (max-width: 450px) {
+        flex-direction: column-reverse;
+    }
 `
 const NavWrapper = styled.div`
     display: flex;
     justify-content: space-between;
+    margin: auto;
     width: 321px;
 
-    Link {
-        text-decoration: none;
+    @media (max-width: 450px) {
+        margin-bottom: 30px;
     }
 `

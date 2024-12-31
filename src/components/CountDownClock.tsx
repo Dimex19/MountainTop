@@ -35,7 +35,7 @@ const CountDownClock:React.FC<{targetDate: Date}> = ({targetDate}) => {
     
   return (
         <Container>
-            <h2><span>{timeLeft.days}<p>Days</p></span>:<span>{timeLeft.hours}<p>Hours</p></span>:<span>{timeLeft.minutes}<p>Minutes</p></span>:<span>{timeLeft.seconds}<p>seconds</p></span></h2>
+            <h2><span>{isNaN(timeLeft.days) ? 0 : timeLeft.days}<p>Days</p></span>:<span>{isNaN(timeLeft.hours) ? 0 : timeLeft.hours}<p>Hours</p></span>:<span>{isNaN(timeLeft.minutes) ? 0 : timeLeft.minutes}<p>Minutes</p></span>:<span>{isNaN(timeLeft.seconds) ? 0 : timeLeft.seconds}<p>seconds</p></span></h2>
         </Container>
   )
 }

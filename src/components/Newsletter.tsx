@@ -9,8 +9,6 @@ const Newsletter:React.FC =()=> {
             <Wrapper>
                 <input type="email" name="email" id="email" placeholder="Enter email address" required />
                 <Button>
-                    {/* <button>SUBSCRIBE</button> */}
-                    {/* <p id="btnPara">SUBSCRIBE</p> */}
                     SUBSCRIBE
                 </Button>
             </Wrapper>
@@ -29,12 +27,21 @@ const Container = styled.div`
         /* border: 1px solid red; */
         text-align: center;
         margin-bottom: 30px;
+
+        @media (max-width: 450px) {
+            font-size: 18px;
+
+        }
     }
     #para {
         text-align: center;
         font-size: 14px;
         opacity: 40%;
         margin-bottom: 40px;
+
+        @media (max-width: 450px) {
+            padding: 0 30px;
+        }
     }
     input {
         padding: 10px;
@@ -51,6 +58,10 @@ const Container = styled.div`
 const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 450px) {
+        padding: 0 20px;
+    }
 `
 const Button = styled.button`
         width: 140px;
@@ -61,15 +72,10 @@ const Button = styled.button`
         display: flex;
         align-items: center;
         justify-content: center;
-        cursor: pointer;
+        font-size: 12px;
 
         :hover {
             width: 150px;
             height: 55px;
         }
-    #btnPara {
-        color: black;
-        text-align: center;
-        font-weight: 600;
-    }
 `
