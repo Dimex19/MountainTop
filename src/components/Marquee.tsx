@@ -100,6 +100,7 @@ const MainContainer = styled.div`
     max-width: 100vw;
     overflow: hidden;
     flex-wrap: wrap;
+    background-color: white;
 
     @keyframes scroll {
         0% {transform: translateX(0)};

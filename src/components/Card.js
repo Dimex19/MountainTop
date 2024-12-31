@@ -11,7 +11,11 @@ const Container = styled.div `
     background-color: white;
     margin-bottom: 30px;
 
-
+    /* :hover {
+        width: 343px;
+        height: 453px;
+        transition: 2s ease-in;
+    } */
     img {
         width: 323px;
         height: 363px;

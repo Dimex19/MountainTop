@@ -20,10 +20,12 @@ const Container = styled.div `
     max-width: 500px;
     margin-top: calc(100vh - 295px);
 
-    @media (max-width: 450px) {}
-    margin-top: 50px;
-    font-size: 48px;
-    order: 2;
+    @media (max-width: 450px) {
+      font-size: 48px;
+      order: 2;
+    }
+    /* margin-top: 50px; */
+    
 
   }
 `;
@@ -45,7 +47,7 @@ const Wrapper = styled.div `
     height: 420px;
     order: 1;
     /* display: none; */
-  }
+    }
   }
 
   
