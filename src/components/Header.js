@@ -4,7 +4,7 @@ import Logo from '../assets/images/logo.png';
 import { Link } from 'react-router-dom';
 import { GiHamburgerMenu } from "react-icons/gi";
 const Header = () => {
-    return (_jsxs(Container, { children: [_jsx("img", { src: Logo, alt: "" }), _jsxs(Links, { children: [_jsx(Link, { to: "/", id: 'link', children: "Home" }), _jsx(Link, { to: "/collections", id: 'link', children: "Collections" }), _jsx(Link, { to: "/foundation", id: 'link', children: "Foundation" })] }), _jsx(HamContainer, { children: _jsx(GiHamburgerMenu, {}) })] }));
+    return (_jsxs(Container, { children: [_jsx("img", { src: Logo, alt: "" }), _jsxs(Links, { children: [_jsx(Link, { to: "/", id: 'link', children: "Home" }), _jsx(Link, { to: "/collections", id: 'link', children: "Collections" }), _jsx(Link, { to: "/foundation", id: 'link', children: "Foundation" })] }), _jsx(HamContainer, { onClick: console.log("hello"), children: _jsx(GiHamburgerMenu, {}) })] }));
 };
 export default Header;
 const Container = styled.div `

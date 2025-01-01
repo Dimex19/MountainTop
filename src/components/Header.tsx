@@ -13,7 +13,7 @@ const Header:React.FC = ()=> {
                 <Link to="/collections" id='link'>Collections</Link>
                 <Link to="/foundation" id='link'>Foundation</Link>
             </Links>
-            <HamContainer>
+            <HamContainer onClick={console.log("hello")}>
                 <GiHamburgerMenu/>
             </HamContainer>
         </Container>

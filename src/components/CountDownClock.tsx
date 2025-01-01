@@ -5,8 +5,8 @@ const CountDownClock:React.FC<{targetDate: Date}> = ({targetDate}) => {
 
     const calculateTimeLeft = ()=> {
         const difference = targetDate.getTime() - new Date().getTime()
-        console.log(difference);
-        console.log(targetDate);
+        // console.log(difference);
+        // console.log(targetDate);
         
 
         const days = Math.floor(difference / (1000 * 60 * 60 * 24))
